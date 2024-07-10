@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+*{
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(131, 10, 231);
+    font-family: "Newsreader", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 0;
+}
+.quote-box{
+    background: rgba(255, 255, 255, 0.4);
+    width: 700px; 
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 40px rgb(3, 23, 171);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);   
+}
+.quote-box h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    padding-bottom: 3px;
+    color: white;
+}
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+    color: white;
+}
+.quote-box blockquote::before,.quote-box blockquote::after{
+    content: '"';
+}
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    color: white;
+}
+.quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(33, 90, 151);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.quote-box button {
+    background: #b630db;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    border : 1px solid whitesmoke;
+    margin: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 125px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.quote-box button:hover {
+    background: blue;
+}
+
+
+
